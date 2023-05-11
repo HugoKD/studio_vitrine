@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: #3f4041;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.main {
+    height: 90vh;
+}
+
+@font-face {
+  font-family: Font;
+  src: url(../fonts/KronaOne-Regular.ttf);
+}
+
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+strong {
+  position: absolute;
+  top: 0; left: 0;
+  margin: 1rem;
+  font-size: 1.5vw;
+  writing-mode: vertical-lr;
+  text-orientation: revert;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none  ;
+  display: flex;
+  align-items: center;
+}
+
+ul>li {
+  margin: 0.5rem;
+  font-size: 1vw;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+  cursor: crosshair;
+}
+
+
+p {
+  font-family: 'Font', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #000000;
+  font-weight: 1000;
+
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  width: 100vw; height: 10vh;
+  overflow: hidden ;
+}
+
+.main .footer {
+  position: absolute;
+  left: 50%; bottom: 1vh;
+  z-index: 10;
+  color: black;
+  font-weight: 1;
+}
+
+
+svg {
+  width: 100%;
+}
+
+
+#contact{
+    display: flex;
+    min-height: 92.5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact .insta {
+    display: block;
+}
+#contact .insta svg {
+    margin: 10%;
+}
+
+section#contact h2::after {
+    content: "";
+    display: inline-block;
+    width: 10vw;
+    height: 1px ;
+    background: linear-gradient(to right, #000000 0%, #232323 100%);
+}
+section#contact h2::before {
+    content: "";
+    display: inline-block;
+    width: 10vw;
+    height: 1px ;
+    background: linear-gradient(to right, #000000 0%, #232323 100%);
+}
+
+#contact h2 {
+  animation-duration: 1s;
+    animation-name: swipe; animation-iteration-count: 1;
+}
+
+@keyframes swipe {
+    from  {
+        margin-right: 10%;
+    }
+    to {
+        margin-right: 0;
+    }
+}
+
+
+
+.contact_div {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px); /* compatibilité avec safari */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    max-height: 600px;
+    transform: translateY(6%);
+    text-align: center;
+    color: white;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+
+  from {
+    margin-left: 10%;
+  }
+  to {
+      margin-left: 0 ;
+  }
+}
+
+section#contact .contact_div .texte {
+    height: 20%;
+}
+section#contact .contact_div .texte h3{
+    display: block;
+    color: black;
+}
+
+section#contact .contact_div .texte::after {
+    content: "";
+    position: absolute;
+    z-index: 10000;
+    width: 50vw; transform: translate(-50%,-50%);
+    height: 1px ;
+    background: linear-gradient(to right, #000000 0%, #232323 100%);
+    margin-bottom: 20%;
+}
+
+section#contact .contact_div .texte h1{
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+section#contact .contact_div form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80%;
+}
+
+section#contact .contact_div form input{
+    width: 45%;
+
+}
+
+section#contact .contact_div form input:hover,
+section#contact .contact_div form textarea:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+section#contact .contact_div form input,
+section#contact .contact_div form textarea {
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #1f2121;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+section#contact .contact_div form input[name="Object"]{
+    width: 100%;
+}
+
+section#contact .contact_div form textarea {
+    width: 100%;
+    resize: none;
+    height: 150px;
+    margin-bottom: 5%;
+}
+
+section#contact .contact_div form button {
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #797979;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+
+section#contact .contact_div form button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 40px -10px #1f2121;
+}
+
+
+
+
+
+
+

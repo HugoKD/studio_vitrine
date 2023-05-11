@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: #3f4041;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+@font-face {
+  font-family: Font;
+  src: url(../fonts/KronaOne-Regular.ttf);
+}
+
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+strong {
+  position: absolute;
+  top: 0; left: 0;
+  margin: 1rem;
+  font-size: 1.5vw;
+  writing-mode: vertical-lr;
+  text-orientation: revert;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none  ;
+  display: flex;
+  align-items: center;
+}
+
+ul>li {
+  margin: 0.5rem;
+  font-size: 1vw;
+}
+
+
+ul a {
+  text-decoration: none;
+  color: black;
+  cursor: crosshair;
+}
+
+
+p {
+  font-family: 'Font', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #000000;
+  font-weight: 1000;
+
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  width: 100vw; height: 10vh;
+  overflow: hidden ;
+}
+
+.main p {
+  position: absolute;
+  left: 50%; bottom: 1vh;
+  z-index: 10;
+  color: black;
+    font-weight: 500;
+}
+
+svg {
+  width: 100%;
+}
+
+
+svg #path212 {
+  width: 100%;
+}
+
+
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s 1 alternate;
+	stroke-width: 3;
+	stroke: #000000;
+	font-size: 140px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgb(101, 98, 112); stroke: rgb(0, 0, 0);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgb(15, 38, 40); stroke: rgb(0, 0, 0); }
+	100% {
+		fill: rgb(4, 0, 16); stroke: rgb(0, 0, 0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 3;
+	}
+}
+
+.projets ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.projets ul li  {
+  font-size: 2vw;
+  font-weight: 10000;
+}
+
+.projets .hidden {
+  position: absolute;
+  top: 50%; left: 0;
+  opacity: 0;
+}
+
+
+
+.projets .display li::after, .projets .display li::before {
+  content: "";
+  display: flex;
+  margin-left: 5%;
+  width: 90%;
+  height: 3px;
+  transform: scale(0);
+  background: linear-gradient(to right, #000000 0%, #232323 100%);
+  transition : transform 0.2s ease-in-out;
+}
+
+.projets .display li:hover::after, .projets .display li:hover::before{
+  transform: scale(1);
+}
+
+.main .fleche {
+  margin: 2%;
+  position: absolute;
+  bottom: 20%; left: 0;
+  opacity: 0;
+}
+
+
