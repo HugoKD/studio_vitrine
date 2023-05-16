@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000000;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    justify-items: center;
+    height: 85vh;
+}
+
+@font-face {
+  font-family: Font;
+  src: url(../fonts/KronaOne-Regular.ttf);
+}
+
+.main .header  {
+  color: white;
+}
+
+.main .header h1 {
+  color: white;
+  font-size: 5vw;
+  font-weight: 10000;
+  letter-spacing: 3px;
+}
+
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+strong {
+  position: absolute;
+  top: 0; left: 0;
+  margin: 1rem;
+  font-size: 1.5vw;
+  writing-mode: vertical-lr;
+  text-orientation: revert;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none  ;
+  display: flex;
+  align-items: center;
+}
+
+ul>li {
+  margin: 0.5rem;
+  font-size: 1vw;
+}
+
+ul a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: crosshair;
+}
+
+
+.vague1 {
+  position: relative;
+  width: 100vw; height: 10vh;
+}
+
+.vague2 {
+  position: relative;
+  width: 100vw; height: 10vh;
+}
+
+svg {
+  width: 100%;
+  color: white;
+}
+
+.footer {
+  position: absolute; transform: translate(-50%,-50%);
+  left: 50%; bottom: 0;
+  z-index: 10;
+  color: black;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+
+
+.main .fleche {
+  color: white;
+  margin: 2%;
+  position: absolute;
+  bottom: 20%; left: 0;
+}
+
+
+.video {
+  display: flex;
+  justify-content: center; align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+}
+
+.video iframe {
+  width: 85%;
+  height: 85%;
+  border: none;
+}
+
+.photo {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; align-items: center;
+  flex-direction: row;
+  width: 90vw;
+  overflow: hidden;
+  margin: 1% auto;
+}
+
+.photo img {
+  width: 40%;
+  margin: 1%;
+}
+
+.pied_de_page {
+  height: 1%;
+}
+
+
+

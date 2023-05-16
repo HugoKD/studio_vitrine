@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #000000;
+    background-repeat: repeat;
+    height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    justify-items: center;
+    height: 85vh;
+}
+
+@font-face {
+  font-family: Font;
+  src: url(../fonts/KronaOne-Regular.ttf);
+}
+
+.main .header  {
+  color: white;
+}
+
+.main .header h1 {
+  color: white;
+  font-size: 5vw;
+  font-weight: 10000;
+  letter-spacing: 3px;
+}
+
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+strong {
+  position: absolute;
+  top: 0; left: 0;
+  margin: 1rem;
+  font-size: 1.5vw;
+  writing-mode: vertical-lr;
+  text-orientation: revert;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none  ;
+  display: flex;
+  align-items: center;
+}
+
+ul>li {
+  margin: 0.5rem;
+  font-size: 1vw;
+}
+
+ul a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: crosshair;
+}
+
+
+.vague1 {
+  position: relative;
+  width: 100vw; height: 10vh;
+}
+
+.vague2 {
+  position: relative;
+  width: 100vw; height: 10vh;
+}
+
+svg {
+  width: 100%;
+  color: white;
+}
+
+.footer {
+  position: absolute; transform: translate(-50%,-50%);
+  left: 50%; bottom: 0;
+  z-index: 10;
+  color: black;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+
+
+.main .fleche {
+  color: white;
+  margin: 2%;
+  position: absolute;
+  bottom: 20%; left: 0;
+}
+
+.couverture {
+  position: relative;
+  display: flex;
+  justify-content: center; align-items: center;
+  height: 95vh;
+  overflow: hidden;
+  margin: 5% auto;
+}
+
+.couverture img {
+  width: 100%;
+}
+
+
+.bloc1 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; align-items: center;
+  flex-direction: row;
+  height: 90vh;
+  margin: 5% auto;
+}
+
+.bloc1 img {
+  height: 100%;
+  margin: 2%;
+}
+
+.bloc2 {
+  position: relative;
+  display: flex;
+  justify-content: center; align-items: center;
+  height: 95vh;
+  overflow: hidden;
+  margin: 5% auto;
+}
+
+.bloc2 img {
+  width: 100%;
+}
+
+
+.bloc3{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; align-items: center;
+  flex-direction: row;
+  height: 90vh;
+  margin: 2% auto;
+}
+
+.bloc3 img {
+  height: 100%;
+  margin: 2%;
+}
+
+.bloc4 {
+  position: relative;
+  display: flex;
+  justify-content: center; align-items: center;
+  height: 95vh;
+  overflow: hidden;
+  margin: 1% auto;
+}
+
+.bloc4 img {
+  width: 100%;
+}
+
+.pied_de_page {
+  height: 1px;
+}
+
+
+

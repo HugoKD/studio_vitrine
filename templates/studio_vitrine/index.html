@@ -11,10 +11,9 @@
 <body>
         <nav>
             <div class="logo">
-                <strong><a href="" style="text-decoration: none; color: black ; cursor: crosshair;">Iris Futur</a></strong>
+                <strong><a href="" style="text-decoration: none; color: #ffffff ; cursor: crosshair;">Iris Futur</a></strong>
             </div>
             <ul>
-                <li><a href="/work">Work</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
@@ -22,28 +21,22 @@
         </nav>
         <div class="main">
 
-
-
             <svg viewBox="0 0 1320 300" id="text">
-                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle" >
                     Mes projets
                 </text>
             </svg>
             <div class="projets">
                 <ul class="display">
-                    <li class="projet1">Projet 1</li>
-                    <li class="projet2">Projet 2</li>
-                    <li class="projet3">Projet 3</li>
-                    <li class="projet4">Projet 4</li>
-                    <li class="projet5">Projet 5</li>
-                </ul>
+                    <li class="projet1"><a href="/work/requin">clip req in - c'est toujours pierre</a></li>
+                    <li class="projet2"><a href="/work/rebook">rebook bts</a></li>
+                    <li class="projet3"><a href="/work/requin">moto helmet</a></li>
+                    <li class="projet4"><a href="/work/requin">sphinx totem</a></li>
+                    <li class="projet5"><a href="/work/requin">bizarre city</a></li>
+                    <li class="projet6"><a href="/work/requin">booba bts</a></li>
+                    <li class="projet6"><a href="/work/requin">ziak bts</a></li>
+                    <li class="projet6"><a href="/work/requin">unreal engine environnements</a></li>
 
-                <ul class="hidden">
-                    <li class="projet1">Projet 1</li>
-                    <li class="projet2">Projet 2</li>
-                    <li class="projet3">Projet 3</li>
-                    <li class="projet4">Projet 4</li>
-                    <li class="projet5">Projet 5</li>
                 </ul>
             </div>
             <div class="fleche">
@@ -119,93 +112,6 @@
             </div>
             <p>Iris Bordier</p>
         </div>
-        <script>
-            const projet1 = document.body.querySelector(".projet1")
-            const Projet1 = document.body.querySelector(".hidden .projet1")
-            const projet2 = document.body.querySelector(".projet2")
-            const Projet2 = document.body.querySelector(".hidden .projet2")
-            const projet3 = document.body.querySelector(".projet3")
-            const Projet3 = document.body.querySelector(".hidden .projet3")
-            const projet4 = document.body.querySelector(".projet4")
-            const Projet4 = document.body.querySelector(".hidden .projet4")
-            const projet5 = document.body.querySelector(".projet5")
-            const Projet5 = document.body.querySelector(".hidden .projet5")
-            const titre = document.body.querySelector(".main #text")
-            const fleche = document.body.querySelector(".main .fleche")
-            const ul = document.body.querySelector(".projets .display")
-            const ul_hidden = document.body.querySelector(".projets .hidden")
 
-
-            projet1.addEventListener("click", function( event ) {
-                Projet1.transitionDuration="2"
-                ul.style.display="none"
-                Projet2.style.opacity="0"
-                titre.style.opacity="0"
-                Projet3.style.opacity="0"
-                Projet4.style.opacity="0"
-                Projet5.style.opacity="0"
-                Projet1.style.opacity="1"
-                ul_hidden.style.opacity="1"
-                fleche.style.opacity="1"
-
-                //top: 50%; left: 0;
-            })
-
-            projet2.addEventListener("click", function( event ) {
-                Projet1.transitionDuration="2"
-                ul.style.display="none"
-                titre.style.display="none"
-                Projet1.style.display="None"
-                Projet3.style.display="None"
-                Projet4.style.display="None"
-                Projet5.style.display="None"
-                Projet2.style.opacity="1"
-                ul_hidden.style.opacity="1"
-                fleche.style.opacity="1"
-
-            })
-
-            projet3.addEventListener("click", function( event ) {
-                Projet3.transitionDuration="2"
-                ul.style.display="none"
-                titre.style.display="none"
-                Projet2.style.display="None"
-                Projet1.style.display="None"
-                Projet4.style.display="None"
-                Projet5.style.display="None"
-                Projet3.style.opacity="1"
-                ul_hidden.style.opacity="1"
-                fleche.style.opacity="1"
-            })
-
-            projet4.addEventListener("click", function( event ) {
-                Projet4.transitionDuration="2"
-                ul.style.display="none"
-                titre.style.display="none"
-                Projet2.style.display="None"
-                Projet3.style.display="None"
-                Projet1.style.display="None"
-                Projet5.style.display="None"
-                Projet4.style.opacity="1"
-                ul_hidden.style.opacity="1"
-                fleche.style.opacity="1"
-            })
-
-            projet5.addEventListener("click", function( event ) {
-                Projet5.transitionDuration="2"
-                ul.style.display="none"
-                titre.style.display="none"
-                Projet2.style.display="none"
-                Projet3.style.display='None'
-                Projet4.style.display='None'
-                Projet1.style.display='None'
-                Projet5.style.opacity="1"
-                ul_hidden.style.opacity="1"
-                fleche.style.opacity="1"
-            })
-
-
-
-        </script>
 </body>
 </html>
