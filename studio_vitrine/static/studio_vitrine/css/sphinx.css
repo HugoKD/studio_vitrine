@@ -1,7 +1,6 @@
 * {
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 
@@ -9,7 +8,6 @@ body {
     background-color: #000000;
     background-repeat: repeat;
     height: 100vh;
-  scroll-behavior: smooth;
 }
 
 .main {
@@ -107,80 +105,39 @@ svg {
   bottom: 20%; left: 0;
 }
 
-.couverture {
-  position: relative;
+
+video {
   display: flex;
   justify-content: center; align-items: center;
-  height: 95vh;
-  overflow: hidden;
+  flex-direction: column;
+  width: 90vw; height: 80%;
   margin: 5% auto;
 }
 
-.couverture img {
-  width: 100%;
+video source {
+  width: 85%;
+  height: 85%;
+  border: none;
+
 }
 
-
-.bloc1 {
+.photo {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; align-items: center;
   flex-direction: row;
-  height: 90vh;
-  margin: 5% auto;
-}
-
-.bloc1 img {
-  height: 100%;
-  margin: 2%;
-}
-
-.bloc2 {
-  position: relative;
-  display: flex;
-  justify-content: center; align-items: center;
-  height: 95vh;
+  height: 100vh;
   overflow: hidden;
   margin: 5% auto;
 }
 
-.bloc2 img {
-  width: 100%;
+.photo img {
+  height: 90%;
+  margin: 1%;
 }
 
 
-.bloc3{
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; align-items: center;
-  flex-direction: row;
-  height: 90vh;
-  margin: 7% auto;
-}
-
-.bloc3 img {
-  height: 95%;
-  margin: 2%;
-}
-
-.bloc4 {
-  position: relative;
-  display: flex;
-  justify-content: center; align-items: center;
-  height: 95vh;
-  overflow: hidden;
-  margin: 1% auto;
-}
-
-.bloc4 img {
-  width: 100%;
-}
-
-.pied_de_page {
-  height: 1px;
-}
 
 
 

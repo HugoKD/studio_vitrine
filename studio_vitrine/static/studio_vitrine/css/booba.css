@@ -1,7 +1,6 @@
 * {
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 
@@ -9,7 +8,6 @@ body {
     background-color: #000000;
     background-repeat: repeat;
     height: 100vh;
-  scroll-behavior: smooth;
 }
 
 .main {
@@ -107,18 +105,6 @@ svg {
   bottom: 20%; left: 0;
 }
 
-.couverture {
-  position: relative;
-  display: flex;
-  justify-content: center; align-items: center;
-  height: 95vh;
-  overflow: hidden;
-  margin: 5% auto;
-}
-
-.couverture img {
-  width: 100%;
-}
 
 
 .bloc1 {
@@ -127,59 +113,54 @@ svg {
   flex-wrap: wrap;
   justify-content: center; align-items: center;
   flex-direction: row;
-  height: 90vh;
-  margin: 5% auto;
+  width: 90vw;
+  overflow: hidden;
+  margin: 7% auto;
 }
 
 .bloc1 img {
-  height: 100%;
-  margin: 2%;
+  width: 100%;
+  margin: 1%;
 }
 
 .bloc2 {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center; align-items: center;
-  height: 95vh;
+  flex-direction: row;
+  width: 90vw;
   overflow: hidden;
-  margin: 5% auto;
+  margin: 10% auto;
 }
 
-.bloc2 img {
-  width: 100%;
+.bloc2 .img1 {
+  width: 43%;
+  margin-right: 2%;
+}
+.bloc2 .img2 {
+  width: 43%;
+  margin-left: 2%;
 }
 
-
-.bloc3{
+.bloc3 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; align-items: center;
   flex-direction: row;
-  height: 90vh;
+  width: 90vw;
+  overflow: hidden;
   margin: 7% auto;
 }
 
 .bloc3 img {
-  height: 95%;
+  width: 100%;
   margin: 2%;
 }
 
-.bloc4 {
-  position: relative;
-  display: flex;
-  justify-content: center; align-items: center;
-  height: 95vh;
-  overflow: hidden;
-  margin: 1% auto;
-}
-
-.bloc4 img {
-  width: 100%;
-}
-
 .pied_de_page {
-  height: 1px;
+  height: 1%;
 }
 
 
