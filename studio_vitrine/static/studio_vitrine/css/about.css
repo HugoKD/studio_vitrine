@@ -1,14 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 
 body {
     background-color: #000000;
-    background-repeat: repeat;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .main {
@@ -21,38 +20,42 @@ body {
 
 @font-face {
   font-family: Font;
-  src: url(../fonts/KronaOne-Regular.ttf);
+  src: url(../fonts/Akira.otf);
 }
 
 
 nav {
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
+    font-family: Font;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1vh;
 }
 
 strong {
-  position: absolute;
-  top: 0; left: 0;
-  margin: 1rem;
-  font-size: 1.5vw;
-  writing-mode: vertical-lr;
-  text-orientation: revert;
+    font-family: Font;
+    position: absolute;
+    top: 0; left: 0;
+    margin: 1rem;
+    font-size: 1.5vh;
+    writing-mode: vertical-lr;
+    text-orientation: revert;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
-  list-style: none  ;
-  display: flex;
-  align-items: center;
+    font-family: Font;
+    padding: 0;
+    margin: 0;
+    list-style: none  ;
+    display: flex;
+    align-items: center;
 }
 
 ul>li {
-  margin: 0.5rem;
-  font-size: 1vw;
+  margin: 1rem;
+  font-size: 1rem;
 }
 
 ul a {
@@ -65,19 +68,21 @@ ul a {
     position: relative; margin: 0;
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
-    width: 50vw;
+    width: 80vw;
     height: 80vh;
 }
 
 .bloc p {
-    display: block;
+    display: inline;
     font-family: 'Font', sans-serif;
     letter-spacing: 1px;
     font-size:13px;
     color: #ffffff;
 }
 .bloc h3 {
-    display: block; width: 100%;
+    box-sizing: border-box;
+    display: inline; width: 100%;
+    position: relative;
     color: white;
 }
 
@@ -92,14 +97,16 @@ ul a {
 
 }
 
-.vague {
-  position: absolute;
-  bottom: 0;
+footer {
+    position: absolute;
+    bottom: 0;
+}
+footer .vague {
   width: 100vw; height: 10vh;
   overflow: hidden ;
 }
 
-.main .footer {
+footer .footer {
   position: absolute; transform: translate(-50%,-50%);
   left: 50%; bottom: 1vh;
   z-index: 10;
@@ -114,6 +121,16 @@ svg {
 
 
 
+@media screen and (max-width: 500px) {
+  nav {
+    margin-bottom: 10%;
+  }
+
+    body {
+        overflow: hidden;
+    }
+
+}
 
 
 

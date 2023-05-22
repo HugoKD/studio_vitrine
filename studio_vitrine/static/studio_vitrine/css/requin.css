@@ -5,9 +5,10 @@
 
 
 body {
-    background-color: #000000;
-    background-repeat: repeat;
-    height: 100vh;
+  background-color: #000000;
+  background-repeat: repeat;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 .main {
@@ -20,7 +21,7 @@ body {
 
 @font-face {
   font-family: Font;
-  src: url(../fonts/KronaOne-Regular.ttf);
+  src: url(../fonts/Akira.otf);
 }
 
 .main .header  {
@@ -28,14 +29,16 @@ body {
 }
 
 .main .header h1 {
+  font-family: Font;
   color: white;
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 10000;
   letter-spacing: 3px;
 }
 
 
 nav {
+  font-family: Font;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -44,6 +47,7 @@ nav {
 }
 
 strong {
+  font-family: Font;
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;
@@ -61,7 +65,7 @@ ul {
 }
 
 ul>li {
-  margin: 0.5rem;
+  margin: 1rem;
   font-size: 1vw;
 }
 

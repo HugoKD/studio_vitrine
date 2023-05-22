@@ -6,9 +6,10 @@
 
 
 body {
-    background-color: #3f4041;
+    background-color: #000000;
     background-repeat: repeat;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .main {
@@ -17,28 +18,30 @@ body {
 
 @font-face {
   font-family: Font;
-  src: url(../fonts/KronaOne-Regular.ttf);
+  src: url(../fonts/Akira.otf);
 }
 
 
 nav {
+    font-family: Font;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-between;font-size: 1vh;
 }
 
 strong {
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;
-  font-size: 1.5vw;
+    font-size: 1.5vh; font-family: Font;
   writing-mode: vertical-lr;
   text-orientation: revert;
 }
 
 ul {
+    font-family: Font;
   padding: 0;
   margin: 0;
   list-style: none  ;
@@ -47,8 +50,8 @@ ul {
 }
 
 ul>li {
-  margin: 0.5rem;
-  font-size: 1vw;
+  margin: 1rem;
+  font-size: 1rem;
 }
 
 ul .contact_li::after {
@@ -56,12 +59,12 @@ ul .contact_li::after {
     display: inline-block;
     width: inherit;
     height: 1px ;
-    background: linear-gradient(to right, #000000 0%, #232323 100%);
+    background: linear-gradient(to right, #8a8a8a 0%, #cc6c6c 100%);
 }
 
 ul a {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   cursor: crosshair;
 }
 
@@ -88,6 +91,7 @@ ul a {
 
 svg {
   width: 100%;
+    color: white;
 }
 
 
@@ -107,6 +111,7 @@ svg {
 
 #contact .insta {
     display: block;
+    color: white;
 }
 #contact .insta svg {
     margin: 10%;
@@ -117,14 +122,14 @@ section#contact h2::after {
     display: inline-block;
     width: 10vw;
     height: 1px ;
-    background: linear-gradient(to right, #000000 0%, #232323 100%);
+    background: linear-gradient(to right, #ffffff 0%, #484848 100%);
 }
 section#contact h2::before {
     content: "";
     display: inline-block;
     width: 10vw;
     height: 1px ;
-    background: linear-gradient(to right, #000000 0%, #232323 100%);
+    background: linear-gradient(to right, #ffffff 0%, #4b4b4b 100%);
 }
 
 #contact h2 {
@@ -142,10 +147,8 @@ section#contact h2::before {
 }
 
 
-
 .contact_div {
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px); /* compatibilité avec safari */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -174,7 +177,7 @@ section#contact .contact_div .texte {
 }
 section#contact .contact_div .texte h3{
     display: block;
-    color: black;
+    color: #ffffff;
 }
 
 section#contact .contact_div .texte::after {
@@ -183,7 +186,7 @@ section#contact .contact_div .texte::after {
     z-index: 10000;
     width: 50vw; transform: translate(-50%,-50%);
     height: 1px ;
-    background: linear-gradient(to right, #000000 0%, #232323 100%);
+    background: linear-gradient(to right, #e3e3e3 0%, #7c7c7c 100%);
     margin-bottom: 20%;
 }
 
@@ -255,7 +258,12 @@ section#contact .contact_div form button:hover {
 
 
 
+@media screen and (max-width: 500px) {
+  nav {
+    margin-bottom: 10%;
+  }
 
+}
 
 
 

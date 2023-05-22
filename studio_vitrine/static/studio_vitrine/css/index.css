@@ -6,14 +6,15 @@
 
 
 body {
-    background-color: #000000;
-    background-repeat: repeat;
-    height: 100vh;
+  background-color: #000000;
+  background-repeat: repeat;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 @font-face {
   font-family: Font;
-  src: url(../fonts/KronaOne-Regular.ttf);
+  src: url(../fonts/Akira.otf);
 }
 
 
@@ -23,13 +24,14 @@ nav {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  font-size: 1vh;
 }
 
 strong {
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;
-  font-size: 1.5vw;
+  font-size: 1.5vh; font-family: Font;
   writing-mode: vertical-lr;
   text-orientation: revert;
   color: white;
@@ -44,8 +46,14 @@ ul {
 }
 
 ul>li {
-  margin: 0.5rem;
-
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: Font;
+}
+.display>li {
+    margin: 0.5rem;
+    font-size: 1vw;
+    font-family: Font;
 }
 
 
@@ -55,11 +63,18 @@ ul a {
   cursor: crosshair;
 }
 
-
-
-.vague {
+.main {
+  display: flex; flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+.footer {
   position: absolute;
   bottom: 0;
+}
+
+.vague {
+  position: relative;
   width: 100vw; height: 10vh;
   overflow: hidden ;
 }
@@ -79,12 +94,14 @@ svg {
 
 
 svg text {
-	text-transform: uppercase;
-	animation: stroke 5s 1 alternate;
-	stroke-width: 3;
-	stroke: #bbbbbb; fill: #bbbbbb;
-	font-size: 140px;
+  display: flex;
+  text-transform: uppercase;
+  animation: stroke 5s 1 alternate;
+  stroke-width: 3;
+  stroke: #bbbbbb; fill: #bbbbbb;
+  font-size: 7vw; font-family: Font;
 }
+
 @keyframes stroke {
 	0%   {
 		fill: rgb(101, 98, 112); stroke: rgb(255, 255, 255);
@@ -94,9 +111,13 @@ svg text {
 	100% {
 		fill: rgb(199, 195, 210); stroke: rgb(199, 195, 210);
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 3;
-	}
+    }
 }
 
+
+.projets  {
+  margin-top: 3%;
+}
 .projets ul {
     display: flex;
     flex-direction: column;
@@ -110,10 +131,11 @@ svg text {
   text-transform: uppercase;
 }
 
-
-
-
-
+.projets ul li a {
+  display: flex;
+  justify-content: center; align-items: center; text-align: center;
+  width: 100%;
+}
 
 .projets .display li::after, .projets .display li::before {
   content: "";
@@ -130,5 +152,11 @@ svg text {
   transform: scale(1);
 }
 
+@media screen and (max-width: 500px) {
+  nav {
+    margin-bottom: 10%;
+  }
+
+}
 
 
