@@ -5,10 +5,10 @@
 
 
 body {
-    background-color: #000000;
-    background-repeat: repeat;
+  background-color: #000000;
+  background-repeat: repeat;
   overflow-x: hidden;
-    height: 100vh;
+  height: 100vh;
 }
 
 .main {
@@ -43,7 +43,8 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-between;font-size: 1vh;
+  height: 5vh;
 }
 
 strong {
@@ -51,13 +52,12 @@ strong {
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
   writing-mode: vertical-lr;
   text-orientation: revert;
 }
 
 ul {
-  font-family: Font;
   padding: 0;
   margin: 0;
   list-style: none  ;
@@ -67,7 +67,7 @@ ul {
 
 ul>li {
   margin: 1rem;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 ul a {
@@ -75,7 +75,6 @@ ul a {
   color: #ffffff;
   cursor: crosshair;
 }
-
 
 .vague1 {
   position: relative;
@@ -169,4 +168,28 @@ svg {
 }
 
 
+@media screen and (max-width: 450px) {
 
+  .vague1 {
+    display: none;
+  }
+  .vague2 {
+    display: none;
+  }
+
+  .footer {
+    color: white;
+  }
+
+  nav {
+      margin-bottom: 10%;
+  }
+  .video {
+    height: fit-content;
+    margin-top: 20vh;
+  }
+
+  .photo {
+    height: fit-content;
+  }
+}

@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   padding: 0;
 }
 
@@ -75,11 +74,10 @@ ul a {
 .bloc p {
     display: inline;
     font-family: 'Font', sans-serif;
-    letter-spacing: 1px;
-    font-size:13px;
     color: #ffffff;
 }
 .bloc h3 {
+    font-family: 'Font', sans-serif;
     box-sizing: border-box;
     display: inline; width: 100%;
     position: relative;
@@ -108,7 +106,7 @@ footer .vague {
 
 footer .footer {
   position: absolute; transform: translate(-50%,-50%);
-  left: 50%; bottom: 1vh;
+  left: 50%; bottom: 0;
   z-index: 10;
   color: black;
     letter-spacing: 3px;

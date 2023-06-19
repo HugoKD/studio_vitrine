@@ -1,5 +1,6 @@
 * {
-  margin: 0;
+  margin-bottom: 0;
+  margin-left: 0; margin-right: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -18,23 +19,32 @@ body {
 }
 
 
+.main .header h1 {
+  font-family: Font;
+  color: white;
+  font-weight: 10000;
+  letter-spacing: 3px;
+}
+
+
 nav {
+  font-family: Font;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
-  font-size: 1vh;
+  justify-content: space-between;font-size: 1vh;
+  height: 5vh;
 }
 
 strong {
+  font-family: Font;
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;
-  font-size: 1.5vh; font-family: Font;
+  font-size: 1.5vh;
   writing-mode: vertical-lr;
   text-orientation: revert;
-  color: white;
 }
 
 ul {
@@ -46,10 +56,11 @@ ul {
 }
 
 ul>li {
-    margin: 1rem;
-    font-size: 1rem;
-    font-family: Font;
+  margin: 1rem;
+  font-size: 1rem;
 }
+
+
 .display>li {
     margin: 0.5rem;
     font-size: 1vw;
@@ -62,6 +73,7 @@ ul a {
   color: #ffffff;
   cursor: crosshair;
 }
+
 
 .main {
   display: flex; flex-direction: column;

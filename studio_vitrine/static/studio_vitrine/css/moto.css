@@ -43,7 +43,8 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-between;font-size: 1vh;
+  height: 5vh;
 }
 
 strong {
@@ -51,13 +52,12 @@ strong {
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
   writing-mode: vertical-lr;
   text-orientation: revert;
 }
 
 ul {
-  font-family: Font;
   padding: 0;
   margin: 0;
   list-style: none  ;
@@ -67,7 +67,7 @@ ul {
 
 ul>li {
   margin: 1rem;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 ul a {
@@ -75,7 +75,6 @@ ul a {
   color: #ffffff;
   cursor: crosshair;
 }
-
 
 .vague1 {
   position: relative;
@@ -131,19 +130,43 @@ svg {
   flex-wrap: wrap;
   justify-content: center; align-items: center;
   flex-direction: row;
-  width: 95vw; height: 100%;
-  overflow: hidden;
+  width: 95vw; height: fit-content;
   margin: 1% auto;
 }
 
 .photo img {
-  width: 30%;
-  margin: 1%;
+  height: 40vh;
+  margin: 5% 1%;
 }
 
 .pied_de_page {
-  height: 1%;
+  height: 2%;
 }
 
 
 
+@media screen and (max-width: 450px) {
+
+  .vague1 {
+    display: none;
+  }
+  .vague2 {
+    display: none;
+  }
+
+  .footer {
+    color: white;
+  }
+
+    nav {
+        margin-bottom: 10%;
+    }
+    .video {
+      height: fit-content;
+      margin-top: 20vh;
+    }
+
+    .photo {
+      height: fit-content;
+    }
+}

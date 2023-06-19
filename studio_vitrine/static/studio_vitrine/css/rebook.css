@@ -34,7 +34,6 @@ body {
 .main .header h1 {
   font-family: Font;
   color: white;
-  font-size: 4vw;
   font-weight: 10000;
   letter-spacing: 3px;
 }
@@ -46,7 +45,8 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-between;font-size: 1vh;
+  height: 5vh;
 }
 
 strong {
@@ -54,13 +54,12 @@ strong {
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
   writing-mode: vertical-lr;
   text-orientation: revert;
 }
 
 ul {
-  font-family: Font;
   padding: 0;
   margin: 0;
   list-style: none  ;
@@ -70,7 +69,7 @@ ul {
 
 ul>li {
   margin: 1rem;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 ul a {
@@ -79,13 +78,14 @@ ul a {
   cursor: crosshair;
 }
 
-
 .vague1 {
+  margin-left: -2px;
   position: relative;
   width: 100vw; height: 10vh;
 }
 
 .vague2 {
+  margin-left: -2px;
   position: relative;
   width: 100vw; height: 10vh;
 }
@@ -117,7 +117,6 @@ svg {
   position: relative;
   display: flex;
   justify-content: center; align-items: center;
-  height: 95vh;
   overflow: hidden;
   margin: 5% auto;
 }
@@ -133,20 +132,25 @@ svg {
   flex-wrap: wrap;
   justify-content: center; align-items: center;
   flex-direction: row;
-  height: 90vh;
   margin: 5% auto;
 }
 
-.bloc1 img {
-  height: 100%;
-  margin: 2%;
+.bloc1 .photo2 {
+  height: 95vh;
+  margin-left:3%;
+  margin-top: 3vh;
+}
+
+.bloc1 .photo1 {
+  height: 95vh;
+  margin-right: 3%;
+  margin-bottom: 3vh;
 }
 
 .bloc2 {
   position: relative;
   display: flex;
   justify-content: center; align-items: center;
-  height: 95vh;
   overflow: hidden;
   margin: 5% auto;
 }
@@ -162,20 +166,26 @@ svg {
   flex-wrap: wrap;
   justify-content: center; align-items: center;
   flex-direction: row;
-  height: 90vh;
+
   margin: 7% auto;
 }
 
-.bloc3 img {
-  height: 95%;
-  margin: 2%;
+
+.bloc3 .photo2 {
+  height: 95vh;
+  margin-left:3%;
+  margin-top: 3vh;
 }
 
+.bloc3 .photo1 {
+  height: 95vh;
+  margin-right: 3%;
+  margin-bottom: 3vh;
+}
 .bloc4 {
   position: relative;
   display: flex;
   justify-content: center; align-items: center;
-  height: 95vh;
   overflow: hidden;
   margin: 1% auto;
 }
@@ -187,6 +197,54 @@ svg {
 .pied_de_page {
   height: 1px;
 }
+
+@media screen and (max-width: 711px) {
+
+  body {
+    overflow-x: hidden;
+  }
+  .vague1 {
+    display: none;
+  }
+  .vague2 {
+    display: none;
+  }
+
+  .footer {
+    color: white;
+  }
+
+    nav {
+        margin-bottom: 10%;
+    }
+    .couverture {
+      margin-top: 10vh;
+    }
+  .bloc1 img {
+    max-width: 90%;
+    height: auto ;
+  }
+
+  .bloc3 img {
+    width: 90%;
+  }
+
+  .bloc1 .photo1 {
+    margin: 2vh 0 2vh 0;
+  }
+  .bloc1 .photo2 {
+    margin: 2vh 0 2vh 0;
+  }
+
+  .bloc3 .photo1 {
+    margin: 2vh 0 2vh 0;
+  }
+  .bloc3 .photo2 {
+    margin: 2vh 0 2vh 0;
+  }
+
+}
+
 
 
 
