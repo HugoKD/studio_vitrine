@@ -29,8 +29,9 @@ body {
 }
 
 .main .header h1 {
-  font-family: Font, serif;
+  font-family: Font,serif;
   color: white;
+  font-size: 4vw;
   font-weight: 10000;
   letter-spacing: 3px;
 }
@@ -91,9 +92,13 @@ svg {
   color: white;
 }
 
+footer {
+  position: relative;
+}
+
 .footer {
   position: absolute; transform: translate(-50%,-50%);
-  left: 50%; bottom: 0;
+  left: 50%; bottom: 50%;
   z-index: 10;
   color: black;
   letter-spacing: 3px;

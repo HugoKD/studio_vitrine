@@ -91,15 +91,18 @@ svg {
   color: white;
 }
 
+footer {
+  position: relative;
+}
+
 .footer {
   position: absolute; transform: translate(-50%,-50%);
-  left: 50%; bottom: 0;
+  left: 50%; bottom: 50%;
   z-index: 10;
   color: black;
   letter-spacing: 3px;
   margin: 0;
 }
-
 
 
 .main .fleche {
