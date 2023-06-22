@@ -100,7 +100,7 @@ footer {
   position: absolute; transform: translate(-50%,-50%);
   left: 50%; bottom: 50%;
   z-index: 10;
-  color: black;
+  color: #ffffff;
   letter-spacing: 3px;
   margin: 0;
 }

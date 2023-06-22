@@ -25,7 +25,7 @@ body {
 
 nav {
     height: 10vh;
-    font-family: Font;
+    font-family: Font,serif;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ nav {
 }
 
 strong {
-    font-family: Font;
+    font-family: Font,serif;
     position: absolute;
     top: 0; left: 0;
     margin: 1rem;
@@ -45,7 +45,7 @@ strong {
 }
 
 ul {
-    font-family: Font;
+    font-family: Font,serif;
     padding: 0;
     margin: 0;
     list-style: none  ;
@@ -109,7 +109,7 @@ footer .footer {
   position: absolute; transform: translate(-50%,-50%);
   left: 50%; bottom: 0;
   z-index: 10;
-  color: black;
+  color: #ffffff;
     letter-spacing: 3px;
 }
 

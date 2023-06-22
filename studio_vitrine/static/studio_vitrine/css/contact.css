@@ -76,7 +76,7 @@ ul a {
     overflow: hidden ;
 }
 
-footer {
+ {
     margin-bottom: -3%;
     height: 10vh;
     display: block;
@@ -90,7 +90,7 @@ footer .footer {
     position: absolute;
     bottom: 20%; left: 50%;
     transform: translate(-50%,-50%);
-    color: black;
+    color: #ffffff;
     z-index: 1000;
     letter-spacing: 3px;
 }
@@ -281,12 +281,12 @@ section#contact .contact_div form button:hover {
       margin-bottom: -30%;
       position: relative;
   }
-    footer {
+     {
         overflow: hidden;
         margin-top: 5%;
 
     }
-  footer .footer {
+   . {
       color: white;
       margin-top: -30vh;
   }
