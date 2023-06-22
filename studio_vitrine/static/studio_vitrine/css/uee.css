@@ -29,7 +29,7 @@ body {
 }
 
 .main .header h1 {
-  font-family: Font;
+  font-family: Font, serif;
   color: white;
   font-size: 4vw;
   font-weight: 10000;
@@ -38,17 +38,17 @@ body {
 
 
 nav {
-  font-family: Font;
+  font-family: Font, serif;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;font-size: 1vh;
-  height: 5vh;
+  height: 10vh;
 }
 
 strong {
-  font-family: Font;
+  font-family: Font, serif;
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;
@@ -185,6 +185,10 @@ svg {
   }
     nav {
         margin-bottom: 10%;
+    }
+
+    .photo .img1 {
+      margin-top: 10vh;
     }
 }
 

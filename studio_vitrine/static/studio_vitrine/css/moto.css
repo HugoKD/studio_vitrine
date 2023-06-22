@@ -38,13 +38,13 @@ body {
 
 
 nav {
-  font-family: Font;
+  font-family: Font,serif;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;font-size: 1vh;
-  height: 5vh;
+  height: 10vh;
 }
 
 strong {
@@ -164,6 +164,7 @@ svg {
     .video {
       height: fit-content;
       margin-top: 20vh;
+      margin-bottom: 10vh;
     }
 
     .photo {

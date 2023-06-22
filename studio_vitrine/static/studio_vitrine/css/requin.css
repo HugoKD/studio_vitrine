@@ -29,7 +29,7 @@ body {
 }
 
 .main .header h1 {
-  font-family: Font;
+  font-family: Font, serif;
   color: white;
   font-weight: 10000;
   letter-spacing: 3px;
@@ -37,17 +37,17 @@ body {
 
 
 nav {
-  font-family: Font;
+  font-family: Font, serif;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;font-size: 1vh;
-  height: 5vh;
+  height: 10vh;
 }
 
 strong {
-  font-family: Font;
+  font-family: Font,serif;
   position: absolute;
   top: 0; left: 0;
   margin: 1rem;

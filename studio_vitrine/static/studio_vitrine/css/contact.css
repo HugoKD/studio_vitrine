@@ -7,12 +7,12 @@
 body {
     background-color: #000000;
     background-repeat: repeat;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
 }
 
-.main {
-    height: 90vh;
+.body {
+    height: 100%;
 }
 
 @font-face {
@@ -22,12 +22,13 @@ body {
 
 
 nav {
-    font-family: Font;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;font-size: 1vh;
+    height: 10vh;
+    font-family: Font, serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;font-size: 1vh;
 }
 
 strong {
@@ -68,22 +69,29 @@ ul a {
 }
 
 
-
-
-
 .vague {
-  position: absolute;
-  bottom: 0;
-  width: 100vw; height: 10vh;
-  overflow: hidden ;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    overflow: hidden ;
 }
 
-.main .footer {
-    position: absolute;
-    left: 50%; bottom: 1vh;
-    z-index: 10;
+footer {
+    margin-bottom: -3%;
+    height: 10vh;
+    display: block;
+    position: relative;
+    width: 100vw;
     color: black;
+
+}
+
+footer .footer {
+    position: absolute;
+    bottom: 20%; left: 50%;
     transform: translate(-50%,-50%);
+    color: black;
+    z-index: 1000;
     letter-spacing: 3px;
 }
 
@@ -95,8 +103,9 @@ svg {
 
 
 #contact{
+    position: relative;
     display: flex;
-    min-height: 92.5%;
+    height: 80vh;
     padding-top: 5%;
     padding-bottom: 10%;
     align-items: center ;
@@ -106,6 +115,7 @@ svg {
 
 #contact h2 {
     color: white;
+    text-align: center;
 }
 
 #contact .insta {
@@ -121,7 +131,7 @@ section#contact h2::after {
     display: inline-block;
     width: 10vw;
     height: 1px ;
-    background: linear-gradient(to right, #ffffff 0%, #484848 100%);
+    background: linear-gradient(to left, #ffffff 0%, #484848 100%);
 }
 section#contact h2::before {
     content: "";
@@ -154,7 +164,6 @@ section#contact h2::before {
     align-items: center;
     max-width: 700px;
     max-height: 600px;
-    transform: translateY(6%);
     text-align: center;
     color: white;
     animation-duration: 2s;
@@ -163,12 +172,12 @@ section#contact h2::before {
 
 @keyframes slidein {
 
-  from {
-    margin-left: 10%;
-  }
-  to {
+    from {
+        margin-left: 10%;
+    }
+    to {
       margin-left: 0 ;
-  }
+    }
 }
 
 section#contact .contact_div .texte {
@@ -195,6 +204,7 @@ section#contact .contact_div .texte h1{
 }
 
 section#contact .contact_div form{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -235,6 +245,7 @@ section#contact .contact_div form textarea {
 }
 
 section#contact .contact_div form button {
+    position: relative;
     width: 192px;
     height: 50px;
     border-radius: 8px;
@@ -257,12 +268,29 @@ section#contact .contact_div form button:hover {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 900px) {
+
   nav {
     margin-bottom: 10%;
   }
+  section#contact h2::after, section#contact h2::before {
+      display: none;
+  }
+
+  .vague  {
+      margin-bottom: -30%;
+      position: relative;
+  }
+    footer {
+        overflow: hidden;
+        margin-top: 5%;
+
+    }
+  footer .footer {
+      color: white;
+      margin-top: -30vh;
+  }
 
 }
-
 
 

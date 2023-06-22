@@ -24,6 +24,7 @@ body {
 
 
 nav {
+    height: 10vh;
     font-family: Font;
     text-transform: uppercase;
     display: flex;
