@@ -108,6 +108,7 @@ footer {
 
 
 .main .fleche {
+  display: flex;
   color: white;
   margin: 2%;
   position: absolute;

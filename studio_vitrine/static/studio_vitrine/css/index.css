@@ -167,6 +167,9 @@ svg text {
     margin-bottom: 10%;
   }
 
+  .main {
+    overflow: hidden;
+  }
 }
 
 
