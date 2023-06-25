@@ -275,9 +275,6 @@ section#contact .contact_div form button:hover {
 
 @media screen and (max-height: 900px) {
 
-  nav {
-    margin-bottom: 5%;
-  }
   section#contact h2::after, section#contact h2::before {
       display: none;
   }
