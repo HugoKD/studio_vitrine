@@ -43,7 +43,12 @@
 
             <div class="contact_div">
                     <div class="texte">
-                        <h3>Par mail</h3>
+                        {%  if nom %}
+                        <h3>Merci pour ton message {{ nom }} !</h3>
+                        <h4>J'y reponds le plus tôt possible</h4>
+                        {% else %}
+                            <h3>Par mail</h3>
+                        {% endif %}
                     </div>
                     <form method="post" action="">
                         {% csrf_token %}

@@ -1,9 +1,21 @@
 from django.shortcuts import render
+from django.core.mail import BadHeaderError, send_mail
+from django.http import HttpResponse, HttpResponseRedirect
 
 def index(request):
     return render(request, "studio_vitrine/index.html")
 
 def contact(request):
+    if request.method=='POST':
+        nom = request.POST.get("Name")
+        objet = request.POST.get("Object")
+        message = request.POST.get("Message")
+        from_email = request.POST.get("Mail")
+
+        send_mail(objet, message, from_email, ["irisfutur@gmail.com"])
+
+        return render(request, 'studio_vitrine/contact.html', {'nom': nom})
+
     return render(request, "studio_vitrine/contact.html")
 
 def about(request):
