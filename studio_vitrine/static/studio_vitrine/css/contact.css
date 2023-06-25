@@ -107,7 +107,7 @@ svg {
 #contact{
     position: relative;
     display: flex;
-    height: 80vh;
+    height: fit-content;
     padding-top: 5%;
     padding-bottom: 10%;
     align-items: center ;
@@ -168,7 +168,6 @@ section#contact h2::before {
     justify-content: space-between;
     align-items: center;
     max-width: 700px;
-    max-height: 600px;
     text-align: center;
     color: white;
     animation-duration: 2s;
