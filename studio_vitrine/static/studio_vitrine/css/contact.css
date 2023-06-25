@@ -23,6 +23,7 @@ body {
 
 nav {
     height: 10vh;
+    position: relative;
     font-family: Font, serif;
     text-transform: uppercase;
     display: flex;
