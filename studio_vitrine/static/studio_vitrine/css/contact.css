@@ -97,8 +97,10 @@ footer .footer {
 
 
 svg {
-  width: 100%;
+    margin: 0;
+    width: 100%;
     color: white;
+
 }
 
 
@@ -122,8 +124,10 @@ svg {
     display: block;
     color: white;
 }
-#contact .insta svg {
-    margin: 10%;
+
+#contact .insta h3 {
+    display: block;
+    text-align: center;
 }
 
 section#contact h2::after {
@@ -183,6 +187,7 @@ section#contact h2::before {
 section#contact .contact_div .texte {
     height: 20%;
 }
+
 section#contact .contact_div .texte h3{
     display: block;
     color: #ffffff;
