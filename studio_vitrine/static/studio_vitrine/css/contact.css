@@ -7,7 +7,7 @@
 body {
     background-color: #000000;
     background-repeat: repeat;
-    height: 100%;
+    height: fit-content;
     overflow-x: hidden;
 }
 
@@ -23,7 +23,6 @@ body {
 
 nav {
     height: 10vh;
-    position: relative;
     font-family: Font, serif;
     text-transform: uppercase;
     display: flex;
