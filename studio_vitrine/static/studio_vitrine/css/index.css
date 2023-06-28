@@ -109,7 +109,7 @@ ul li .about, ul li .contact{
 
 .footer p {
   letter-spacing: 3px;
-  color: #000000;
+  color: white;
   position: absolute; transform: translate(-50%,0);
   left: 50%; bottom: 0;
   z-index: 10;
