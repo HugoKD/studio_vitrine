@@ -130,4 +130,3 @@ STATIC_ROOT = "/var/www/irisfutur.com/static"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-

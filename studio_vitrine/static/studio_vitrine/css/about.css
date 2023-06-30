@@ -73,9 +73,9 @@ ul a {
 }
 
 .bloc p {
-    display: inline;
-    font-family: 'Font', sans-serif;
+    font-family: Keraleeyam, serif;
     color: #ffffff;
+    font-size: 20px;
 }
 .bloc h3 {
     font-family: 'Font', sans-serif;
@@ -106,6 +106,7 @@ footer .vague {
 }
 
 footer .footer {
+    font-weight: lighter;
   position: absolute; transform: translate(-50%,-50%);
   left: 50%; bottom: 0;
   z-index: 10;

@@ -25,7 +25,7 @@
         <section id="contact">
             <h2>Vous souhaiter me contacter ? </h2>
             <div class="insta">
-                <h3>Instagram </h3>
+                <h4>Instagram </h4>
                 <a href="https://www.instagram.com/iris.futur/">
                     <svg width="64px" height="64px" viewBox="0 0 32.00 32.00" id="Camada_1" version="1.1" xml:space="preserve"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000"
@@ -47,17 +47,11 @@
                         <h3>Merci pour ton message {{ nom }} !</h3>
                         <h4>J'y reponds le plus tôt possible</h4>
                         {% else %}
-                            <h3>Par mail</h3>
+                            <h4>Par mail</h4>
                         {% endif %}
                     </div>
-                    <form method="post" action="">
-                        {% csrf_token %}
-                        <input type="text" name="Name" placeholder="Votre nom" required="">
-                        <input type="text" name="Mail" placeholder="Votre adresse mail" required="">
-                        <input type="text" name="Object" placeholder="Objet" required="">
-                        <textarea type="text" name="Message" placeholder="Message"></textarea>
-                        <button type="submit">Envoyer</button>
-                    </form>
+                <br>
+            <h4>irissbbordier@gmail.com</h4>
                 </div>
         </section>
     </div>
