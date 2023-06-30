@@ -12,7 +12,7 @@ body {
 }
 
 .body {
-    height: 100%;
+    height: 10vh;
 }
 
 @font-face {
@@ -107,12 +107,12 @@ svg {
 #contact{
     position: relative;
     display: flex;
-    height: fit-content;
     padding-top: 5%;
     padding-bottom: 2%;
     align-items: center ;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 70vh;
 }
 
 #contact h2 {
