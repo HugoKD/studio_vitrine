@@ -98,7 +98,7 @@ ul li .about, ul li .contact{
 .footer {
   position: relative;
   bottom: 0;
-  height: 10vh;
+  height: fit-content;
 }
 
 .vague {
