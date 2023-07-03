@@ -120,13 +120,16 @@ svg {
     text-align: center;
 }
 
-#contact .insta {
+#contact .insta  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2% 0;
-    display: block;
     color: white;
+
 }
 
-#contact .insta h3 {
+#contact .insta h4 {
     display: block;
     text-align: center;
 }
